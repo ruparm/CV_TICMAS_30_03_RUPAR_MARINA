@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Spectral+SC';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.contenedor-header{
+    background-color: rgb(162, 96, 224);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Spectral';
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: beige;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+        color: black;
+    }
+
+.nav-responsive{
+    background-color: gray;
+    color: beige;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*SECCION INICIO*/
+.inicio{
+    background: linear-gradient(to top, grey, grey);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.inicio .contenido-banner{
+    padding: 30px;
+    background-color: #1e2326;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 30px;
+    font-size: 32px;
+    font-family:'Spectral';
+    color: beige;
+}
+
+.inicio .contenido-banner h2{
+    font-size: 20px;
+    font-weight: normal;
+    color: beige;
+}
+.inicio .contenido-banner redes{
+    color: rgb(245, 240, 240);
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+    line-height: 42px;
+    margin: 40px 10px;
+    font-size: 50px;
+    transition: .3s;
+}
+
+
+
+/*SECCION FORMACION*/
+
+.formacion{
+    background-color: black;
+    color: wheat;
+    padding: 50px 20px;
+}
+
+.formacion .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.formacion .contenido-seccion h2{
+    font-size: 48px;
+    font-family: 'Spectral';
+    text-align: left;
+    justify-content: space-between;
+    align-items: normal;
+    padding: 20px 0;
+}
+.formacion .fila{
+    display: flex;
+}
+.formacion .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.formacion .fila .col h3{
+    font-size: 28px;
+    font-family: 'Spectral';
+    margin-bottom: 25px;
+}
+.formacion .formacion > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.formacion .formacion .barra-formacion{
+    height: 8px;
+    width: 100%;
+    background-color: blueviolet;
+    position: relative;
+    margin-bottom: 30px;
+}
+.formacion .formacion .barra-ingles{
+    height: 8px;
+    width: 85%;
+    background-color: blueviolet;
+    position: relative;
+    margin-bottom: 30px;
+}
+.formacion .formacion .barra-informatica{
+    height: 8px;
+    width: 85%;
+    background-color: blueviolet;
+    position: relative;
+    margin-bottom: 30px;
+}
+/*SECCION EXPERIENCIA*/
+
+.experiencia{
+    background-color: black;
+    color: wheat;
+    padding: 50px 20px;
+}
+
+.experiencia .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.experiencia .contenido-seccion h2{
+    font-size: 48px;
+    font-family: 'Spectral';
+    text-align: left;
+    align-items: normal;
+    padding: 20px 0;
+}
+.experiencia .contenido-seccion h3{
+    font-size: 20px;
+    font-family: 'Spectral';
+    text-align: left;
+    align-items: normal;
+    padding: 10px 0;
+}
+.experiencia .contenido-seccion h4{
+    font-size: 20px;
+    font-family: 'Spectral';
+    text-align: left;
+    align-items: normal;
+    padding: 10px 0;
+}
+/*SECCION EXPERIENCIA*/
+.contacto{
+    background-color: black;
+    color: wheat;
+    padding: 50px 0px;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.contacto .contenido-seccion h2{
+    font-size: 48px;
+    font-family: 'Spectral';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+    color: beige;
+    font-size: 18px;
+}
+.contacto .button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: grey;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+/*SECCION RESPONSIVE*/
+@media screen and (max-with:600px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: blueviolet;
+        width: 180px;
+    }
+    .nav.responsive ul{
+        display: block !important;
+    }
+    .nav.responsive ul li{
+        border-bottom: 1px solid;
+        padding: 10px 0;
+    }
+}

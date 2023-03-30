@@ -1,0 +1,160 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CURRICULUM VITAE</title>
+    <link rel="stylesheet" href="estiloCV.css"
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+   <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#">SUSANA</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a</li>
+                <li><a href="#formacion"onclick="seleccionar()">FORMACIÓN</a</li>   
+                <li><a href="#experiencia"onclick="seleccionar()">EXPERIENCIA LABORAL</a</li>
+                <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a</li>
+            </ul>
+        </nav>
+        <div class="nav-responsive"onclick="mostrarOocultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div> 
+    </header>
+   </div>
+
+   <!--SECCION DE INICIO-->
+   <section id="inicio" class="inicio">
+     <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="">
+        </div>
+        <h1>SUSANA PEREYRA</h1>
+        <h2>Licenciada en Comercio Exterior</h2>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+     </div>
+   </section>
+
+   <!--SECCION DE FORMACIÓN-->
+   <section  class="formacion" id="formacion">
+    <div class="contenido-seccion">
+        <h2>Formación</h2>
+        <div class="fila">
+
+            <div class="col">
+                <h3>Educación Universitaria. Universidad de Avellaneda. 2005-2010</h3>
+                <div class="formacion">
+                    <span>Licenciada en Comercio Exterior</span>
+                    <div class="barra-formacion">
+                        <div class="progreso">
+                          <span>100%</span>
+                        </div>
+                    </div>
+                   
+            </div>
+                <div class="formacion">
+                    <span>Ingles</span>
+                    <div class="barra-ingles">
+                        <div class="progreso">
+                          <span>85%</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="formacion">
+                    <span>Herramientas informáticas</span>
+                    <div class="barra-informatica">
+                        <div class="progreso">
+                          <span>90%</span>  
+        </div>
+    </div>
+   </section>
+
+    <!--SECCION DE EXPERIENCIA-->
+    <section  class="experiencia" id="experiencia">
+        <div class="contenido-seccion">
+            <h2>Experiencia Laboral</h2>
+            <div class="fila">
+
+                <div class="col">
+                    <h3>MAERSK-Empresa de Transportes</h3>
+                    <div class="experiencia">
+                        <span>Gerenta de ventas. De 2019 a la actualidad. A cargo del conglomerado de negocios internacionales con actividades en varias áreas, principalmente en los sectores del transporte y la energía.</span>
+                        
+                    </div>   
+                </div>  
+            </div>  
+            <div class="col">
+                <h4>DUPONT CORPORATION</h4>
+                <div class="experiencia">
+                    <span>Tareas de CSR y Supply Chain. De 2010 al 2017. A cargo de la "plataforma" de marketing en Tecnologías electrónicas y de comunicación</span>
+                    
+                </div>   
+            </div>  
+        </div>  
+    </section>
+    <!--SECCION DE CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion"> 
+            <h2>CONTACTO</h2>
+            <p>Hola, soy Susana Pereyra. Me gusta trabajar en equipo, tengo una mirada integral y transversal e interdisiplinaria </p>
+            
+            <div class="fila">
+                   <!--datos personales-->
+            
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de Nacimiento</strong>
+                            25-03-1989
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            15-3325-6589
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            susanap@gmail.com
+                        </li>
+                        <li>
+                            <strong>Domicilio</strong>
+                            Av. 51 N358, La Plata, Buenos Aires, Argentina.
+                        </li>
+
+
+
+                    </ul>
+            </div>
+        </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay" ></span>
+                </button>
+                 <input type="text" placeholder="Nombre:">
+                 <input type="text" placeholder="Celular:">
+                 <input type="text" placeholder="Mail:">
+                 <input type="text" placeholder="Mensaje:">
+                 <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                 <button>
+                    Enviar Mensaje><i class="fa-sharp fa-solid fa-share-from-square"></i> 
+                    <span class="overlay" ></span>
+                 </button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <script> src="CV.js"</script>
+</body>
+</html>
